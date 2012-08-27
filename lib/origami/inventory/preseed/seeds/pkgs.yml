@@ -1,0 +1,43 @@
+---
+# Note on Ubuntu:
+# emacs, git-core needs to be installed for PE
+# In addition, ruby is required for FOSS
+# The iso doesn't have those in it so
+# they are installed by post scripts
+Ubuntu:
+  '10':
+    PE:
+    - openssh-server
+    - ntp
+    - vim
+    FOSS:
+    - openssh-server
+    - ntp
+    - vim
+  '12':
+    PE:
+    - openssh-server
+    - ntp
+    - vim
+    FOSS:
+    - openssh-server
+    - ntp
+    - vim
+Debian:
+  '6':
+    PE:
+    - openssh-server
+    - ntp
+    - sysstat
+    - vim
+    - emacs
+    - git-core
+    FOSS:
+    - openssh-server
+    - ntp
+    - sysstat
+    - vim
+    - emacs
+    - git-core
+    - ruby
+

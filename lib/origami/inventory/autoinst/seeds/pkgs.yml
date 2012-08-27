@@ -1,0 +1,17 @@
+# SLES needs git installed via post scripts
+---
+SLES:
+  '11':
+    PE:
+    - openssh
+    - ntp
+    - sysstat
+    - vim
+    - emacs
+    FOSS:
+    - openssh
+    - ntp
+    - sysstat
+    - vim
+    - emacs
+    - ruby

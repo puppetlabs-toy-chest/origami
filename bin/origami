@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+### origami
+
+project_path = File.expand_path(
+                                File.join(File.dirname(__FILE__), '..', 'lib')
+                                )
+
+$LOAD_PATH.unshift(project_path) unless $LOAD_PATH.include?(project_path)
+
+if ARGV.length == 0
+  piece_of_art = File.new(File.join(File.dirname(__FILE__), 'hello.txt'),'r').read
+  print( piece_of_art + "\n\n")
+  abort("'--help' for usage\n\n")
+end
+  
+require 'origami'
+
+if __FILE__ == $0
+  options = Origami::Options.parse_args
+  Origami.craft(options)
+end

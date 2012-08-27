@@ -1,0 +1,14 @@
+### (July 26) Oracle & SL reponame unsure
+---
+CentOS:
+  '5': CentOS
+  '6': CentOS
+RedHat:
+  '5': Red Hat Enterprise Linux
+  '6': Red Hat Enterprise Linux
+Oracle:
+  '5': Oracle Repository
+  '6': Oracle Repository
+SL:
+  '5': Scientific Linux
+  '6': Scientific Linux
